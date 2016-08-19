@@ -76,7 +76,7 @@
 				<li>slptx.us
 
 				<li>mccoywebdeveloper.com
-				<li><a href="//<?= $_SERVER['SERVER_NAME'] . '/blog.mccoywebdeveloper.com' ?>" title="Blog Example" target="_blank">blog.mccoywebdeveloper.com</a>
+				<li><a href="http://<?php if(ENVIRONMENT == 'local_development'){ echo $_SERVER['SERVER_NAME'] . '/'; } ?>blog.mccoywebdeveloper.com" title="Blog Example" target="_blank">blog.mccoywebdeveloper.com</a>
 				<li>crfish/crfish-fuelphp
 			</ul>
 		</div>

@@ -51,9 +51,14 @@
  *     testing
  *     production
  *
- * NOTE: If you change these, also change the error_reporting() code below
+ * $_SERVER['CI_ENV'] -> To be defined in the .htaccess file such
+ *
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');
+
+
 
 /*
  *---------------------------------------------------------------
@@ -65,7 +70,7 @@
  */
 switch (ENVIRONMENT)
 {
-	case 'development':
+	case 'local_development':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;

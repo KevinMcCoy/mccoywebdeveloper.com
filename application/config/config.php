@@ -23,7 +23,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'mccoywebdeveloper.com';
+
+switch (ENVIRONMENT) {
+	case 'local_development': $config['base_url'] = 'http://localhost/mccoywebdeveloper.com/';
+		break;
+
+	case 'testing':
+	case 'production': $config['base_url'] = 'http://mccoywebdeveloper.com/';
+		break;
+
+	default:
+		exit('The application environment is not set correctly.');
+
+};
+
+
 
 /*
 |--------------------------------------------------------------------------
