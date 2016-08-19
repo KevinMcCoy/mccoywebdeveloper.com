@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>McCoy Web Developer</title>
+	<title><?= $title ?></title>
 
 	<style type="text/css">
 
@@ -66,7 +66,7 @@
 <body>
 
 	<div id="container">
-		<h1>Welcome to McCoy Web Developer!</h1>
+		<h1><?= $title; ?></h1>
 
 		<div id="body">
 			<ul>
@@ -76,8 +76,7 @@
 				<li>slptx.us
 
 				<li>mccoywebdeveloper.com
-				<li>blog.mccoywebdeveloper.com
-
+				<li><a href="//<?= $_SERVER['SERVER_NAME'] . '/blog.mccoywebdeveloper.com' ?>" title="Blog Example" target="_blank">blog.mccoywebdeveloper.com</a>
 				<li>crfish/crfish-fuelphp
 			</ul>
 		</div>
