@@ -1,10 +1,8 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>McCoy Web Developer</title>
 
 	<style type="text/css">
 
@@ -67,23 +65,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<div id="container">
+		<h1>Welcome to McCoy Web Developer!</h1>
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+		<div id="body">
+			<ul>
+				<li>_km_libary
+				<li>A-Beautiful-Theme-LLC
+				<li>birchmier.com
+				<li>slptx.us
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+				<li>mccoywebdeveloper.com
+				<li>blog.mccoywebdeveloper.com
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+				<li>crfish/crfish-fuelphp
+			</ul>
+		</div>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+		<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.
+			<?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong> <a href="user_guide/">User Guide</a>' : '' ?>
+		</p>
 	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
 
 </body>
 </html>
